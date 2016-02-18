@@ -1,0 +1,44 @@
+.image-preview{
+  display: inline-block;
+  position: relative;
+
+  img,video{
+    width: 200px;
+    height: 200px;	
+  }
+  video{
+    background-color: black;
+    vertical-align: middle;
+  }
+  .glyphicon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opactiy: 0.5;
+    color: white;
+  }
+  .inset{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.6;
+  }
+}
+.topic{
+  text-align: center;
+  .image-preview {
+    animation: fadein .65s ease-out;
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1.0;
+      }
+    }
+  }
+}

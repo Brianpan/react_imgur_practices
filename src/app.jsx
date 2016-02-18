@@ -1,12 +1,12 @@
+//react cheetsheet
+//http://ricostacruz.com/cheatsheets/react.html#property-validation
+
+//最後更新完flow會告訴前端有新的state
+
+//this.state.items綁定到firebase items 
 var React = require('react');
+var Routes = require('./routes');
 
-var Hello = React.createClass({
-  render: function() {
-    return <h1 className="red">
-      Hello!
-    </h1>
-  }
-});
+var Api = require('./utils/api');
 
-var element = React.createElement(Hello, {});
-React.render(element, document.querySelector('.container'));
+React.render(Routes, document.querySelector('body'));
